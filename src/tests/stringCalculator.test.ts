@@ -21,3 +21,14 @@ test('Le pasamos UNO y devuelve UNO', () => {
     expect(value).toBe(1);
 
 });
+
+test('Le pasamos dos numeros separados por comas', () => {
+    
+    let string = "1,2";
+    let stringOperator = new stringCalculator();
+
+    let value = stringOperator.add(string);
+
+    expect(value).toBe(3);
+
+});
