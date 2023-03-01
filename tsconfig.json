@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "declaration": true,   // Generates corresponding '.d.ts' files
+      "module": "umd",
+      "strict": true,
+      "target": "es5",
+      "esModuleInterop": true
+    },
+  }
