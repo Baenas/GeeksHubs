@@ -32,3 +32,14 @@ test('Le pasamos dos numeros separados por comas', () => {
     expect(value).toBe(3);
 
 });
+
+test('Le pasamos tres numeros separados por comas', () => {
+    
+    let string = "1,2,3";
+    let stringOperator = new stringCalculator();
+
+    let value = stringOperator.add(string);
+
+    expect(value).toBe(6);
+
+});
