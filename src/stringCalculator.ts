@@ -1,18 +1,25 @@
 export class stringCalculator {
 
+
     add(string: string) {
 
         let numbers = string.split(',')
 
-        if (numbers.length === 2) {
-            let total = Number(numbers[0]) + Number(numbers[1]);
-            return total
-        }else if (numbers.length === 3){
-            let total = Number(numbers[0]) + Number(numbers[1]) + Number(numbers[2]);
-            return total
+        if (numbers.length > 0) {
+            let total = 0
+
+            for (let index = 0; index < numbers.length; index++) {
+                total += Number(numbers[index])
+            }
+
+            return total;
+        } else {
+            
+            return Number(string)
         }
 
-        return Number(string)
+
+
 
     }
 
